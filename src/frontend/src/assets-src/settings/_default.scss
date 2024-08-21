@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: var(--font-family);
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p, small {
+    font-family: var(--font-family);
+    font-style: var(--font-regular);
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--font-size-xl);
+}
+
+h2 {
+    font-size: var(--font-size-lg);
+}
+
+h3 {
+    font-size: var(--font-size-md);
+}
+
+h4 {
+    font-size: var(--font-size-sm);
+}
+
+h5 {
+    font-size: var(--font-size-xm);
+}
+
+h6 {
+    font-size: var(font-size-xxm);
+}

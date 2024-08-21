@@ -1,0 +1,13 @@
+.app{
+    background-color: var(--site-gray-300);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+
+    &__content {
+        max-width: 1170px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 20px 16px;
+    }
+}

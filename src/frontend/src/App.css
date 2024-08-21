@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: var(--font-family);
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p, small {
+  font-family: var(--font-family);
+  font-style: var(--font-regular);
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+}
+
+h3 {
+  font-size: var(--font-size-md);
+}
+
+h4 {
+  font-size: var(--font-size-sm);
+}
+
+h5 {
+  font-size: var(--font-size-xm);
+}
+
+h6 {
+  font-size: var(font-size-xxm);
+}
+
+:root {
+  --site-primary-300: #61fcfb;
+  --site-primary-500: #04DAD9;
+  --site-primary-700: #025d5c;
+  --site-secondary-300: #f495c3;
+  --site-secondary-500: #E82181;
+  --site-secondary-700: #7d0d43;
+  --site-neutral-300: white;
+  --site-neutral-500: #FFFAC5;
+  --site-neutral-700: #ffef46;
+  --site-gray-300: #f4f4f4;
+  --site-gray-500: #B4B4B4;
+  --site-gray-700: #747474;
+  --site-black: #2D3235;
+  --site-white: #E1E1E1;
+  --site-error: #FF0D0D;
+  --site-warning: #F07B07;
+  --font-family: Open Sans, sans-serif;
+  --font-regular: 400;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-size-xl: 3rem;
+  --font-size-lg: 2rem;
+  --font-size-md: 1.5rem;
+  --font-size-xs: 1rem;
+  --font-size-xxs: 0.875rem;
+  --font-size-xxxs: 0.75rem;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/OpenSans-Regular.woff") format("woff"), url("fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: normal;
+  src: url("fonts/OpenSans-Italic.woff") format("woff"), url("fonts/OpenSans-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/OpenSans-Regular.woff") format("woff"), url("fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: url("fonts/OpenSans-Italic.woff") format("woff"), url("fonts/OpenSans-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/OpenSans-Regular.woff") format("woff"), url("fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: bold;
+  src: url("fonts/OpenSans-Italic.woff") format("woff"), url("fonts/OpenSans-Italic.ttf") format("truetype");
+}
+.main-header {
+  width: 100%;
+  background-color: var(--site-black);
+}
+.main-header__content {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-header__menu {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+.main-header__menu > li {
+  list-style: none;
+}
+
+.button {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  background-color: var(--site-secondary-500);
+}
+.button:hover {
+  background-color: var(--site-secondary-700);
+}
+.button--sm {
+  padding: 5px 9px;
+}
+.button--bg {
+  padding: 12px 20px;
+}
+
+.main-footer {
+  width: 100%;
+  background-color: var(--site-black);
+}
+.main-footer__content {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: grid;
+  gap: 40px;
+  justify-items: center;
+  width: 100%;
+}
+.main-footer__menu {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+.main-footer__menu > li {
+  list-style: none;
+}
+.main-footer__menu > li > a {
+  color: var(--site-white);
+  text-decoration: none;
+}
+
+.app {
+  background-color: var(--site-gray-300);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+.app__content {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 16px;
+}

@@ -1,0 +1,73 @@
+@use 'sass:color';
+
+// default colors
+$black: #2D3235 !default;
+$white: #E1E1E1 !default;
+$gray: #B4B4B4 !default;
+$error: #FF0D0D !default;
+$warning: #F07B07 !default;
+$primary: #04DAD9 !default;
+$secondary: #E82181 !default;
+$neutral: #FFFAC5 !default;
+
+// pre-definitions
+$lightness-300: 25% !default;
+$lightness-700: 25% !default;
+
+$primary-500: $primary !default;
+$primary-300: lighten($primary-500, $lightness-300) !default;
+$primary-700: darken($primary-500, $lightness-700) !default;
+
+$secondary-500: $secondary !default;
+$secondary-300: lighten($secondary-500, $lightness-300) !default;
+$secondary-700: darken($secondary-500, $lightness-700) !default;
+
+$neutral-500: $neutral !default;
+$neutral-300: lighten($neutral-500, $lightness-300) !default;
+$neutral-700: darken($neutral-500, $lightness-700) !default;
+
+$gray-500: $gray !default;
+$gray-300: lighten($gray-500, $lightness-300) !default;
+$gray-700: darken($gray-500, $lightness-700) !default;
+
+$font-family: "Open Sans", sans-serif !default;
+$font-regular: 400;
+$font-semibold: 600;
+$font-bold: 700;
+$font-size-xl: 3rem;
+$font-size-lg: 2rem;
+$font-size-md: 1.5rem;
+$font-size-sm: 1.125rem;
+$font-size-xs: 1rem;
+$font-size-xxs: 0.875rem;
+$font-size-xxxs: 0.75rem;
+
+:root {
+    --site-primary-300: #{$primary-300};
+    --site-primary-500: #{$primary-500};
+    --site-primary-700: #{$primary-700};
+    --site-secondary-300: #{$secondary-300};
+    --site-secondary-500: #{$secondary-500};
+    --site-secondary-700: #{$secondary-700};
+    --site-neutral-300: #{$neutral-300};
+    --site-neutral-500: #{$neutral-500};
+    --site-neutral-700: #{$neutral-700};
+    --site-gray-300: #{$gray-300};
+    --site-gray-500: #{$gray-500};
+    --site-gray-700: #{$gray-700};
+    --site-black: #{$black};
+    --site-white: #{$white};
+    --site-error: #{$error};
+    --site-warning: #{$warning};
+
+    --font-family: #{$font-family};
+    --font-regular: #{$font-regular};
+    --font-semibold: #{$font-semibold};
+    --font-bold: #{$font-bold};
+    --font-size-xl: #{$font-size-xl};
+    --font-size-lg: #{$font-size-lg};
+    --font-size-md: #{$font-size-md};
+    --font-size-xs: #{$font-size-xs};
+    --font-size-xxs: #{$font-size-xxs};
+    --font-size-xxxs: #{$font-size-xxxs};
+}
